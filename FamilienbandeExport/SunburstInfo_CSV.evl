@@ -1,0 +1,51 @@
+Familienbande - Exportvorlage V1
+<Beginn Header>
+0[!FamilienTabelle-CSV.csv]
+0
+1Idx[TAB]Prename[TAB]Callname[TAB]Postname[TAB]Lastname[TAB]Partner[TAB]Children[TAB]
+0
+0
+<Ende Header>
+<Beginn Body>
+1[variable1]=
+1[variable11]=0
+1[loop][anzahlehen(x)]
+1[variable11]=+1
+1[if][variable11]>1
+1[variable1]=[variable1];
+1[end]
+1[variable1]=[variable1][inummer([?inrpartner(x)])]
+1[endloop]
+0
+1[variable8]=
+1[variable81]=0
+1[loop][anzahlkinder(x)]
+1[variable81]=+1
+1[if][variable81]>1
+1[variable8]=[variable8];
+1[end]
+1[variable8]=[variable8][inummer(([?inrkind(x)])]
+1[endloop]
+1[variable8]=[variable8]
+0
+1[inummer(x)][TAB][preruf(x)][TAB][rufname(x)][TAB][postruf(x)][TAB][nachname(x)][TAB][variable1][TAB][variable8][TAB]
+<Ende Body>
+<Beginn Footer>
+<Ende Footer>
+Einzelseiten: nein
+Pretext: nein
+Dateiname: 
+Indexnummer: nein
+fortlaufend: ja
+Offset: 
+Endung: 
+DateinameEingestellt: FamilienTabelle-CSV.csv
+sortieren: ja
+Umlautwandlung: 3
+Zeilenumbruch: 1
+Sortierung: 0
+Dateiauswahl: nein
+Erstellt durch: 
+Bemerkung: 
+KeinePersonenauswahl: nein
+Ordner fuer Bilder: 
