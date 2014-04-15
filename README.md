@@ -1,13 +1,19 @@
 FamilySunburst
 ==============
 
+![Sunburst](https://raw.githubusercontent.com/amyro/FamilySunburst/master/examples/overview.png)
+
 A sunburst diagramm to visualise a genealogical tree implemented in Processing. The diagram was designed to visualise a genealogical tree starting from one ancestor (name in the middle). Rings in one colour nuance represent one generation of the family. The inner ring of one colour nuance contains the descendants and the outer ring their partners. The next ring outwards contains the children of the descendants.
 
-[![Sunburst](https://github.com/amyro/FamilySunburst/blob/master/examples/cyan.png)](https://github.com/amyro/FamilySunburst/blob/master/examples/cyan.png)
+![Sunburst](https://raw.githubusercontent.com/amyro/FamilySunburst/master/examples/green.png)
+
+## Adjustment
+Sunbursts can be printed in several colours. Textsize, Circle-Radius, Ring-Width can be adjusted as well within the Processing code (see comments on parameters defined at the beginning of each class).
+
+
+## Database
+The family database is stored as a .csv file. Each family member listed in the diagram has an id. Ids need to must from 1 - #familyMembers. Besides the name, partner-ids and child-ids are stored for each member. I exported my database from the software Familienbande. The folder Familienbande contains an export template for this software. An example library is contained in examples.
 
 
 
 
-## Colour Adjustment
-
-[![Multiple Feeds](https://github.com/amyro/FamilySunburst/blob/master/examples/red.png)](https://github.com/amyro/FamilySunburst/examples/red.png) [![One Feed](https://github.com/amyro/FamilySunburst/blob/master/examples/purple.png)](https://github.com/amyro/FamilySunburst/blob/master/examples/purple.png) [![Two Feed](https://github.com/amyro/FamilySunburst/blob/master/examples/blue.png)](https://github.com/amyro/FamilySunburst/blob/master/examples/blue.png)
